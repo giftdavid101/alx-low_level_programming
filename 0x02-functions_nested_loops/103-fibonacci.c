@@ -8,25 +8,23 @@
 
 int main(void)
 {
-int i;
-unsigned long int j, k, next, sum;
-j = 1;
-k = 2;
+long int total_sum, sum, first, second;
+total_sum = 0;
 sum = 0;
+first = 0;
+second = 1;
 
-for (i = 1; i <= 33; ++i)
+while (sum < 4000000)
 {
-if (j < 4000000 && (j % 2) == 0)
-k += j;
-if (k % 2 == 0)
+sum = first + second;
+if (sum % 2 == 0)
 {
-sum = sum + j;
+total_sum += sum;
+
 }
-next = j + k;
-j = k;
-sum += k;
-k = next;
+first = second;
+second = sum;
 }
-printf("%lu\n", sum);
+
 return (0);
 }
