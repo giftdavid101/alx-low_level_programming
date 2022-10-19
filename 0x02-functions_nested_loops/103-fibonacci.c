@@ -8,23 +8,18 @@
 
 int main(void)
 {
-long int total_sum, sum, first, second;
-total_sum = 0;
-sum = 0;
-first = 0;
-second = 1;
-
-while (sum < 4000000)
+unsigned long fibVal = 0, fib2 = 1, fibsum;
+float totalSum;
+while (1)
 {
-sum = first + second;
-if (sum % 2 == 0)
-{
-total_sum += sum;
-
+fibsum = fibVal + fib2;
+if (fibsum > 4000000)
+break;
+if ((fibsum % 2) == 0)
+totalSum += fibsum;
+fibVal = fib2;
+fib2 = fibsum;
 }
-first = second;
-second = sum;
-}
-
+printf("%.0f\n", totalSum);
 return (0);
 }
