@@ -12,7 +12,6 @@ int string = 0, n;
 while (str[string] != '\0')
 string++;
 if (string + 1 % 2 != '0')
-{
 n = (string - 1) / 2;
 else
 n = (string / 2);
