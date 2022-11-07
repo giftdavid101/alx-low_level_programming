@@ -16,9 +16,13 @@ char *arr;
 unsigned int index;
 
 arr = malloc(sizeof(c) * size);
-if (size == 0 && arr == NULL)
+if (size == 0)
 {
 	return (NULL);
+}
+if (arr == NULL)
+{
+ return NULL;
 }
 for (index = 0; index < size; index++)
 {
