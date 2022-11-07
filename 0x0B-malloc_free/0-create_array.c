@@ -22,7 +22,7 @@ if (size == 0)
 }
 if (arr == NULL)
 {
- return NULL;
+ return (NULL);
 }
 for (index = 0; index < size; index++)
 {
