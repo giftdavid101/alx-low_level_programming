@@ -18,11 +18,11 @@ unsigned int index;
 arr = malloc(sizeof(c) * size);
 if (size == 0)
 {
-	return (NULL);
+return (NULL);
 }
 if (arr == NULL)
 {
- return (NULL);
+return (NULL);
 }
 for (index = 0; index < size; index++)
 {
