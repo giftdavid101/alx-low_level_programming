@@ -14,10 +14,7 @@ int i, j = 0;
 
 pstr = (char *)malloc((sizeof(char) * j) + 1);
 if (pstr == NULL)
-{
 return (NULL);
-}
-
 for (i = 0; i < j; i++)
 pstr[i] = str[i];
 pstr[j] = '\0';
