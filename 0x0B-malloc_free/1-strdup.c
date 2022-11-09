@@ -16,7 +16,7 @@ unsigned int j;
 i = 0;
 j = 0;
 
-pstr = (char *)malloc((sizeof(char) * j) + 1);
+pstr = (char *)malloc((sizeof(char) * (j + 1));
 if (pstr == NULL)
 return (NULL);
 while (str[j])
