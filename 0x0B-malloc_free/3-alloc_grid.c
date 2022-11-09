@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * returns a pointer to a 2 dimensional array of integers.
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers.
  * @width: width of matrix
  * @height: height of matrix
  * Return: pointer or NULL
