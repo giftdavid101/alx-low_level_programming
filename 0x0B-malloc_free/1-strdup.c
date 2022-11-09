@@ -10,8 +10,8 @@
 char *_strdup(char *str)
 {
 char *pstr;
-int i = 0;
-int j = 0;
+unsigned int i = 0;
+unsigned int j = 0;
 
 pstr = (char *)malloc((sizeof(char) * j) + 1);
 if (pstr == NULL)
