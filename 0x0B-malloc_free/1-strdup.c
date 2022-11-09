@@ -16,14 +16,17 @@ unsigned int j;
 i = 0;
 j = 0;
 
-pstr = (char *)malloc(sizeof(char) * (j + 1));
-if (pstr == NULL)
+if (str == NULL)
 return (NULL);
+
 while (str[j])
 j++;
 
-if (str == NULL)
+pstr = (char *)malloc(sizeof(char) * (j + 1));
+
+if (pstr == NULL)
 return (NULL);
+
 while ((pstr[i] = str[i]) != '\0')
 i++;
 return (pstr);
