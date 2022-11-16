@@ -1,5 +1,5 @@
-#include "FUNC_POINTER"
-#define "FUNC_POINTER"
+#include FUNC_POINTER
+#define FUNC_POINTER
 #include <stdlib.h>
 
 void print_name(char *name, void (*f)(char *));
