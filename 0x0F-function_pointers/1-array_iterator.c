@@ -17,7 +17,7 @@ if (array && action)
 
 while (i < size)
 
-action(array[m]);
+action(array[i]);
 i++;
 
 }
