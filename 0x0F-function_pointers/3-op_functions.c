@@ -14,7 +14,7 @@ return (a + b);
 
 /**
  * op_add - calculates the sum of two integers
- * @a: first integer 
+ * @a: first integer
  * @b: second integer
  * Return: difference of a and b
  */
