@@ -15,7 +15,7 @@ return (a + b);
 }
 
 /**
- * op_add - calculates the sum of two integers
+ * op_sub - calculates the sum of two integers
  * @a: first integer
  * @b: second integer
  * Return: difference of a and b
@@ -43,6 +43,23 @@ return (a * b);
  * @a: first integer
  * @b: second integer
  * Return: remainder of a divided b
+ */
+
+int op_div(int a, int b)
+{
+if (b == 0)
+{
+printf("Error\n");
+exit(100);
+}
+return (a / b);
+}
+
+/**
+ * op_mod - entry point
+ * @a: operator
+ * @b: char
+ * Return: integer
  */
 
 
