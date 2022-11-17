@@ -1,4 +1,7 @@
+#include <string.h>
 #include "3-calc.h"
+#include <stdlib.h>
+
 
 /**
  * get_op_func - function pointer that selects the right func
