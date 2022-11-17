@@ -1,4 +1,4 @@
-#include FUNC_POINTER
+#ifndef FUNC_POINTER
 #define FUNC_POINTER
 #include <stdlib.h>
 
