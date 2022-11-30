@@ -8,22 +8,29 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t num = 0;
-	long int diff;
+const listint_t *base, *comp;
+size_t count_base = 0, count_comp = 0;
 
-	while (head)
-	{
-		diff = head - head->next;
-		num++;
-		printf("[%p] %d\n", (void *)head, head->n);
-		if (diff > 0)
-			head = head->next;
-		else
-		{
-			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
-			break;
-		}
-	}
+base = head;
+comp = head;
+while (base != NULL)
+{
+while (count_base > count_comp)
+{
+if (base == comp)
+{
+printf("-> [%p] %d\n", (void *)base, base->n);
+return (count_base);
+}
+count_comp++;
+comp = comp->next;
+}
+comp = head;
+count_comp = 0;
+printf("[%p] %d\n", (void *)base, base->n);
+count_base++;
+base = base->next;
+}
+return (count_base);
 
-	return (num);
 }
