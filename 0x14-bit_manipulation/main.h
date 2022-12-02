@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 void _putchar(char n);
-unsigned int binary_to_uint(const char *b);
-
+unsigned int nary(unsigned long int n);
+void print_binary(unsigned long int n);
 
 #endif
