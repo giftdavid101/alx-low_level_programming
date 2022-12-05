@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * read_textfile - Reads text file and
+ * create_file - create a file
  * prints it to the POSIX standard output.
- * @letters: number of letters to print
+ * @text_content: number of letters to print
  * @filename: name of a file to read
- * Return: number of letters it could read and print
+ * Return: integer 1 || -1
  */
- 
-ssize_t read_textfile(const char *filename, size_t letters)
+
+int create_file(const char *filename, char *text_content)
 {
 int fd;
 size_t ret;
