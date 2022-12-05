@@ -21,7 +21,7 @@ if (fd < 1)
 return (-1);
 if (!text_content)
 {
-close(fd)
+close(fd);
 return (0);
 }
 ret = write(fd, text_content, strlen(text_content));
