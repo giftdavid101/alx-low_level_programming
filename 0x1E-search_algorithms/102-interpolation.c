@@ -5,6 +5,9 @@
  * @array: pointer to the first element of the array
  * @size: no.  of elements in an array
  * @value: value
+ * @low: first index
+ * @high: last index
+ * @size: size of the array
  * Return: first index where value is located
  */
 
